@@ -4,9 +4,11 @@ import com.ryan.wishlist.services.ProductService;
 import com.ryan.wishlist.document.Product;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,6 +28,16 @@ public class ProductController {
 
     @GetMapping(value="/product/{id}")
     public Mono<Product> getProductById(@PathVariable String id){
+        return service.findById(id);
+    }
+
+    @PutMapping(value="/product/{id}")
+    public Mono<Product> putProductById(@PathVariable String id){
+        return service.findById(id);
+    }
+
+    @DeleteMapping(value="/product/{id}")
+    public Mono<Product> deleteProductById(@PathVariable String id){
         return service.findById(id);
     }
 

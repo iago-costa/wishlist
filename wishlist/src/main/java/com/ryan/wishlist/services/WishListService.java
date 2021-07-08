@@ -11,4 +11,6 @@ public interface WishListService {
     Mono<WishList> findById(String id);
 
     Mono<WishList> save(WishList wishList);
+
+    
 }

@@ -10,44 +10,61 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class WishList {
     @Id
     private String id;
+
+    private String products;
+    private String cliente;
+
     
-    private Product[] products;
-    private Client cliente;
-    public WishList(String id, Product[] products, Client cliente) {
+
+    public WishList(String id, String products, String cliente) {
         this.id = id;
         this.products = products;
         this.cliente = cliente;
     }
+
+
+
     public String getId() {
         return id;
     }
+
+
+
     public void setId(String id) {
         this.id = id;
     }
-    public Product[] getProducts() {
+
+
+
+    public String getProducts() {
         return products;
     }
-    public void setProducts(Product[] products) {
+
+
+
+    public void setProducts(String products) {
         this.products = products;
     }
-    public Client getCliente() {
+
+
+
+    public String getCliente() {
         return cliente;
     }
-    public void setCliente(Client cliente) {
+
+
+
+    public void setCliente(String cliente) {
         this.cliente = cliente;
     }
 
+
+
     public boolean add_product(){
+        
         return false;
 
     }
-
-    @Override
-    public String toString() {
-        return "WishList [cliente=" + cliente + ", id=" + id + ", products=" + Arrays.toString(products) + "]";
-    }
-
-
     
 
     

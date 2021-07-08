@@ -5,9 +5,11 @@ import com.ryan.wishlist.document.Client;
 import com.ryan.wishlist.services.ClientService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,6 +29,16 @@ public class ClientController {
 
     @GetMapping(value="/client/{id}")
     public Mono<Client> getClientById(@PathVariable String id){
+        return service.findById(id);
+    }
+
+    @PutMapping(value="/client/{id}")
+    public Mono<Client> putClientById(@PathVariable String id){
+        return service.findById(id);
+    }
+
+    @DeleteMapping(value="/client/{id}")
+    public Mono<Client> deleteClientById(@PathVariable String id){
         return service.findById(id);
     }
 
