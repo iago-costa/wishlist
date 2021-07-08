@@ -1,5 +1,6 @@
 package com.ryan.wishlist.document;
 
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
