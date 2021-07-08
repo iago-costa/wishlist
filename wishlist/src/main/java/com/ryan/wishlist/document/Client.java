@@ -1,5 +1,9 @@
-package ryan.producoes.wishlist.models;
+package com.ryan.wishlist.document;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+@Document(collection="client")
 public class Client {
     private String name;
     private String email;

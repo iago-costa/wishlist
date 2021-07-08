@@ -1,4 +1,4 @@
-package ryan.producoes.wishlist;
+package com.ryan.wishlist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,5 @@
-package ryan.producoes.wishlist.controllers;
+
+package com.ryan.wishlist.controllers;
 
 //import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package ryan.producoes.wishlist;
+package com.ryan.wishlist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
