@@ -31,12 +31,7 @@ public class ProductController {
         return service.findById(id);
     }
 
-    @PutMapping(value="/product/{id}")
-    public Mono<Product> putProductById(@PathVariable String id){
-        return service.findById(id);
-    }
-
-    @DeleteMapping(value="/product/{id}")
+    @DeleteMapping(value="/product/delete/{id}")
     public Mono<Product> deleteProductById(@PathVariable String id){
         return service.findById(id);
     }

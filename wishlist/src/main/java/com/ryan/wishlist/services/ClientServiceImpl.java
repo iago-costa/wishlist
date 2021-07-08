@@ -29,4 +29,15 @@ public class ClientServiceImpl implements ClientService{
     public Mono<Client> save(Client client) {
         return pr.save(client);
     }
+
+    @Override
+    public Mono<Client> upById(String id) {
+        
+        return null;
+    }
+
+    @Override
+    public Mono<Void> deleteById(String id) {
+        return pr.deleteById(id);
+    }
 }

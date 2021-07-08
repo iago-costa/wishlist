@@ -10,6 +10,10 @@ public interface ClientService {
 
     Mono<Client> findById(String id);
 
+    Mono<Client> upById(String id);
+
+    Mono<Void> deleteById(String id);
+
     Mono<Client> save(Client client);
 
 }
